@@ -5,8 +5,9 @@ import Root from './components/layout/Root';
 import Header from './components/layout/Header';
 import SidebarMenu from './components/layout/SidebarMenu';
 import SidebarContent from './components/layout/SidebarContent';
-import IndexPage from './pages/index';
 import LayoutContainer from './containers/LayoutContainer';
+import IndexPage from './pages/index';
+import LedgerConvert from './pages/ledger-convert';
 
 const Routes: React.SFC = () => (
     <Root>
@@ -17,6 +18,7 @@ const Routes: React.SFC = () => (
                     <SidebarContent sidebarOpen={sidebarOpen} menu={<SidebarMenu />}>
                         <Switch>
                             <Route exact path='/' component={IndexPage} />
+                            <Route exact path='/ledger-convert' component={LedgerConvert} />
                         </Switch>
                     </SidebarContent>
                 )

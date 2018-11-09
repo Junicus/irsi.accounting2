@@ -4,7 +4,6 @@ import Main from './main';
 import * as serviceWorker from './serviceWorker';
 import configureStore from './store';
 import { createBrowserHistory } from 'history';
-import './index.css';
 
 const history = createBrowserHistory();
 
